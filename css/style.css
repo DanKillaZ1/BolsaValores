@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.container{
+    background-color: #fff;
+    width: 460px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.container h1 {
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    margin-bottom: 8px;
+}
+
+form input {
+    flex: 1;
+    padding: 6px;
+    font-size: 1rem;
+    border-radius: 8px 0 0 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+form button {
+    padding: 6px ;
+    font-size: 1rem;
+    border-radius: 0 8px 8px 0;
+    border: none;    
+    cursor: pointer;
+    background-color: #ffb92a;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #ce8b80;
+}
+
+#stock-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+#stock-list li:last-child{
+    border-bottom: none;
+
+}
+
+li.error{
+    background-color: #f72a2a;
+    color: #fff;
+}
